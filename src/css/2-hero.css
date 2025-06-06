@@ -221,7 +221,8 @@ aside,
     padding: 0 215px;
   }
   .hero-content {
-    padding: 272px 526px 208px 100px;
+    padding: 272px 0 208px 100px;
+    min-width: 1070px;
   }
   .hero-title {
     font-size: 72px;

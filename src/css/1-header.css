@@ -11,11 +11,14 @@
   z-index: 1;
 }
 .logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 70px;
+  height: 56px;
   fill: #fff;
 }
+
 
 .header-contacts,
 .header-nav {

@@ -19,7 +19,6 @@
   fill: #fff;
 }
 
-
 .header-contacts,
 .header-nav {
   display: none;
@@ -140,12 +139,29 @@
   height: 1px;
   background-color: #303030;
 }
+.booking-link {
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  width: 160px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking-link:hover,
+.booking-link:focus {
+  background-color: #ff6c00;
+}
 @media screen and (min-width: 768px) {
   .header-wrapper {
     min-width: calc(100% - 78px);
     align-items: start;
   }
-  .logo{
+  .logo {
     fill: black;
   }
   .header-contacts,
@@ -155,7 +171,7 @@
   .mobile-menu-open {
     display: none;
   }
-   .nav-list {
+  .nav-list {
     display: flex;
     gap: 20px;
     min-height: 56px;
@@ -175,22 +191,6 @@
     align-items: center;
     gap: 20px;
   }
-  .booking-link {
-    font-size: 12px;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #fff;
-    border: 1px solid #ff6c00;
-    border-radius: 25px;
-    min-width: 161px;
-    min-height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .booking-link:hover {
-    background-color: #ff6c00;
-  }
   .tel-link {
     color: #fff;
     letter-spacing: 0.1em;
@@ -198,18 +198,16 @@
   }
 }
 @media screen and (min-width: 1600px) {
-  .header{
+  .header {
     padding: 0 215px;
   }
   .header-wrapper {
     min-width: calc(100% - 430px);
     align-items: center;
   }
-  .header-contacts{
+  .header-contacts {
     flex-direction: row;
     align-items: center;
     gap: 43px;
   }
-  
 }
-  

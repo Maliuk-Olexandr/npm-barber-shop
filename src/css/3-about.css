@@ -1,0 +1,87 @@
+.example-wrapper {
+  display: none;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-desc {
+  display: flex;
+  gap: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.about-desc::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  align-self: center;
+}
+.about-title {
+  max-width: 306px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555;
+}
+.about-title + .about-text {
+  font-size: 16px;
+  line-height: 1.63;
+}
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about-wrapper .booking-link {
+  color: #303030;
+}
+.about-wrapper .booking-link:hover,
+.about-wrapper .booking-link:focus {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .about{
+    display: flex;
+    gap: 30px;
+  }
+  .example-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 330px;
+  }
+  .about-title + .about-text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .about-wrapper {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about{
+    padding: 0 215px;
+  }
+.example-wrapper{
+  flex-direction: row;
+  min-width: 570px;
+}
+.about-content{
+  max-width: 470px;
+}
+.about-title{
+  font-size: 42px;
+  max-width: 100%;
+}
+
+}

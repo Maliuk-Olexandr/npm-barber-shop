@@ -2,17 +2,156 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/npm-barber-shop/assets/logo-CXrvhsTv.svg" />
+    <meta name="description" content="Best Barbershop in your city. Book your appointment now!" />
+    <meta name="keywords" content="barbershop, haircut, grooming, booking" />
+    <meta name="author" content="BarberShop Team" />
+    <link rel="icon" type="image/svg+xml" href="/npm-barber-shop/assets/favicon-BfWLWZo5.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
-    <link rel="stylesheet" crossorigin href="/npm-barber-shop/assets/index-BR0mNFfZ.css">
+    <script type="module" crossorigin src="/npm-barber-shop/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/npm-barber-shop/assets/index-DqMnVhI3.css">
   </head>
   <body>
-    
+    <header class="header container">
+  <div class="header-wrapper">
+    <a href="/">
+      <svg class="logo" width="70" height="56" aria-label="logo">
+        <use href="/npm-barber-shop/assets/icons-CawAWaTc.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#services">Services and prices</a></li>
+        <li><a class="nav-link" href="#barbers">Barbers</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-contacts">
+      <address>
+        <a class="tel-link" href="tel:+380441111111">+38 044 111 11 11</a>
+      </address>
+      <a class="booking-link" href="#order">Online-booking</a>
+    </div>
+    <button
+      class="mobile-menu-open"
+      type="button"
+      id="mobile-menu-open"
+      aria-label="mobile menu open"
+      data-menu-open
+    >
+      <svg class="btn-menu-open" width="40" height="40">
+        <use href="/npm-barber-shop/assets/icons-CawAWaTc.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu" data-menu>
+    <div class="mobile-menu-wrapper">
+      <button
+        class="mobile-menu-close"
+        aria-label="close menu"
+        type="button"
+        data-menu-close
+      >
+        <svg width="40" height="40">
+          <use href="/npm-barber-shop/assets/icons-CawAWaTc.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a class="mobile-link nav-link" href="#About">About</a></li>
+          <li>
+            <a class="mobile-link nav-link" href="#services"
+              >Services and prices</a
+            >
+          </li>
+          <li><a class="mobile-link nav-link" href="#barbers">Barbers</a></li>
+          <li><a class="mobile-link nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-contacts">
+        <address>
+          <a class="mob-tel-link" href="tel:+380441111111">+38 044 111 11 11</a>
+        </address>
+        <a class="mob-booking-link" href="#order">Online-booking</a>
+      </div>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="instagram"
+            >Instagram</a
+          >
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="youtube"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="section hero">
+  <div class="container hero-wrapper">
+    <aside>
+      <ul class="hero-social-list">
+        <li class="hero-social-item">
+          <a
+            class="social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="instagram"
+            >Instagram</a
+          >
+        </li>
+        <li class="hero-social-item">
+          <a
+            class="social-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="youtube"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </aside>
+    <div class="hero-content hero1">
+      <p class="hero-desc">A hair salon for men in Kyiv</p>
+      <h1 class="hero-title">BarberShop</h1>
+      <p class="hero-subtitle">
+        We are experts in trendy men&apos;s haircuts. We work quickly, carefully
+        and with style.
+      </p>
+      <ul class="hero-label">
+        <li name="span1" class="is-active"></li>
+        <li name="span2"></li>
+        <li name="span3"></li>
+      </ul>
+      <div class="hero-controls">
+          <button type="button" name="back">&lArr; Back</button>
+          <button type="button" name="forward">Forward &rArr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
       
       
       
@@ -23,6 +162,5 @@
 
     
 
-    <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
